@@ -23,11 +23,11 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: gayatri148/devops5.1
+          images: irtayag/nodejs-app
 
       - name: Build and Push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: gayatri148/devops5.1:latest
+          tags: irtayag/nodejs-app:latest
